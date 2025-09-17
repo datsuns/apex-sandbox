@@ -1,0 +1,6 @@
+.bazel-cache/
+bazel-bin
+bazel-hello-bazel
+bazel-out
+bazel-testlogs
+
