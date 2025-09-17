@@ -14,6 +14,16 @@ cc_binary(
     deps = [":hello"],
 )
 
+cc_binary(
+    name = "talker",
+    srcs = ["src/talker.cc"],
+    deps = [
+        "@rclcpp_pkg//:rclcpp",
+        "@rcutils_pkg//:rcutils",
+        "@rcl_pkg//:rcl",
+    ],
+)
+
 cc_test(
     name = "hello_test",
     srcs = ["tests/hello_test.cc"],

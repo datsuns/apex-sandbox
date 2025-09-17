@@ -1,0 +1,16 @@
+load("//third_party:pkgconfig.bzl", "pkg_config_repo")
+
+pkg_config_repo(
+    name = "rclcpp_pkg",
+    package = "rclcpp",
+)
+
+pkg_config_repo(
+    name = "rcutils_pkg",
+    package = "rcutils",
+)
+
+pkg_config_repo(
+    name = "rcl_pkg",
+    package = "rcl",
+)
