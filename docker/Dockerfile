@@ -30,7 +30,7 @@ WORKDIR /home/dev/work/rules_ros
 # Python 仮想環境を用意（インストーラが pip を使うため隔離しておく）
 RUN python3 -m venv .venv \
  && . .venv/bin/activate \
- && python -m pip install -U pip wheel \
+ && python -m pip install -U pip wheel packaging \
  && echo 'source /home/dev/work/rules_ros/.venv/bin/activate' >> ~/.bashrc
 
 # venv をデフォルト PATH に前置（非対話実行でも venv の python/pip が使われる）
